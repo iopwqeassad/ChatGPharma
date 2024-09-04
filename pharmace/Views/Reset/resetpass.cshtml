@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "تعيين كلمة السر";
+}
+
+    <section class="container d-flex justify-content-center mt-5">
+        <div class="col-md-7 px-4">
+
+
+            <form action="" class="mt-5">
+                <a href="" class="d-flex justify-content-center align-items-center mb-3">
+                    <img src="ّظassets/images/logo/Elb-logo.png" width="100px" height="auto" alt="">
+                </a>
+
+                <h6 class=""> هل نسيت كلمة السر ؟</h6>
+                <p style="font-size: 12px;">أدخل بريدك الإلكتروني وسنرسل لك تعليمات لإعادة تعيين كلمة المرور الخاصة بك
+                </p>
+                <div class="form-floating my-4">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput"> الايميل</label>
+                </div>
+
+                <div>
+                    <button class="btn btn-success rounded-5 w-100 mb-4" type="submit">ارسال</button>
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                    <a asp-controller="Home" asp-action="Login" style="color: #075830;">
+                            العودة لتسجيل الدخول
+                            <i class="fa-solid fa-chevron-left fa-sm"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+

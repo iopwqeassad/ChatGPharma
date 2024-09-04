@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "تسجيل حساب جديد";
+}
+
+<section class="container d-flex justify-content-center mt-5">
+    <div class="col-md-7 px-4">
+        <div class="text-center mt-5">
+            <h3 class="text-second mb-4" style="color: #075830; font-weight: 700;">تسجيل حساب جديد</h3>
+        </div>
+
+        <form class="form-floating" asp-action="CreateNew" asp-controller="Home">
+            <div class="row mt-5 ">
+                <div class="col-6 mb-2">
+                    <div class="form-floating ">
+                        <input type="text" class="form-control" id="firstname" name="fname" placeholder="الاسم الأول"
+                               required>
+                        <label for="firstname"> الاسم الأول</label>
+
+                    </div>
+                </div>
+                <div class="col-6 mb-2">
+                    <div class="form-floating ">
+                        <input type="text" class="form-control" id="sname" name="sname" placeholder="الاسم الثانى"
+                               required>
+                        <label for="sname"> الاسم الثانى</label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col text-end">
+                    <div class="form-floating mb-2">
+                        <input type="email" class="form-control" id="custEmail" name="Email" placeholder="البريد الإلكتروني"
+                               required pattern="^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                        <label for="custEmail">عنوان البريد الإلكتروني</label>
+                        <div class="invalid-feedback">البريد الإلكتروني غير صحيح</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col text-end">
+                    <div class="form-floating mb-2">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="كلمة السر"
+                               
+                               required>
+                        <label for="password">كلمة السر</label>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="passwordd" name="passwordconfirm" placeholder="كلمة السر"
+                               required>
+                        <label for="password">تأكيد كلمة السر</label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-3 text-center my-4">
+
+                <button class="btn btn-success rounded-5 custom-button" type="submit">تسجيل</button>
+            </div>
+        </form>
+
+        <div class="d-grid gap-3 text-center my-4">
+            <p>
+                لديك حساب بالفعل ؟
+                <a asp-action="Create" asp-controller="Home" class="text-second text-decoration-none" style="color: #075830;"> تسجيل الدخول </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
